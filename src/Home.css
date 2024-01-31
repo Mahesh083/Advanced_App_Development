@@ -1,4 +1,4 @@
-/* .dashboard-row{
+.dashboard-row{
     display: flex;
     flex-direction: row;
     background-color:peachpuff;
@@ -6,7 +6,6 @@
     height:100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: -0.3cm;
-    margin-left: -0.3cm ;
     align-items: center;
 }
 .img-logo
@@ -89,4 +88,4 @@ h{
     font-size: 25px;
     display: flex;
     flex-direction: column;
-} */
+}

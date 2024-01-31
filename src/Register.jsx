@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Row } from 'react-bootstrap';
-import './Form.css';
+// import './Form.css';
+// import './Register.css'
 import user from './assets/user.jpg';
 
 function Forms() {
@@ -68,11 +69,10 @@ function Forms() {
 
   return (
     <div className="Registration">
-      <Form className="form" onSubmit={handleSubmit}>
+      <Form className="form22" onSubmit={handleSubmit}>
         <div>
-          <Form.Group controlId="formGridlabel" id="reg-head" className="col col-sm-20">
-            <h3>Register Here</h3>
-          </Form.Group>
+         
+            <h3 style={{textAlign:"center"}}>Register Here</h3>
           <br />
           <div className="users">
             <img src={user} alt=" " width={100} />
@@ -130,7 +130,6 @@ function Forms() {
               ) : ''}
             </Form.Group>
           </Row>
-
           <Row className="mb-3">
             <Form.Group controlId="formBasicEmail" className="col col-sm-10">
               <Form.Label className="input">Confirm Password</Form.Label>

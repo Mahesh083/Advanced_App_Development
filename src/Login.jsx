@@ -47,12 +47,11 @@ function Login() {
   };
 
   return (
-    <div className="Registration">
+    <div className="Registration2">
       <Form className="form" onSubmit={handleSubmit}>
         <div>
-          <Form.Group controlId="formGridlabel" id="reg-head" className="col col-sm-20">
-            <h3>LOGIN</h3>
-          </Form.Group>
+         
+            <h3 style={{textAlign:"center"}}>LOGIN</h3>
           <br />
           <div className="users">
             <img src={user} alt=" " width={100} />

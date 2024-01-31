@@ -1,28 +1,31 @@
-// import React from 'react';
-// import { Button } from "@mui/material";
-// import { Button } from "@mui/material";
-import { Button } from "@mui/material";
-import "./NavBar.css"
-import { Link } from "react-router-dom";
-import university from './assets/university.jpg';
-import menus from './assets/menus.png';
-function Navbar() {
-    return (
-       <div className="body">
-      <div class="nav">
-      <div class="navcontent">
-      <Link to="/" class="text"><Button variant="contained">Home</Button></Link>
-      <Link to="/about" class="text"><Button variant="contained">About us</Button></Link>
-      <Link to="/addcourse" class="text"><Button variant="contained">course</Button></Link>
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
-      </div>
-      <div className="login">
-      <Link to="/login" class="text"><Button variant="contained">Login</Button></Link>
-      </div>
-      <img src={university} alt=""></img>
-      </div>
-      </div>
-    );
-  }
-  
-  export default Navbar;
+const Navbar = () => {
+  return (
+    <div className='Containers'>
+    <nav>
+      <ul>
+        <li id='a' ><Link to="/" style={{textDecoration:"none",color:"white"}}>Home</Link></li>
+        <li className='dropdown' id='a' style={{marginLeft:"10cm"}}>
+       
+          <span className="dropbtn" >Admission</span>
+          <div className="dropdown-content">
+            <Link to="/eng" style={{textDecoration:"none",color:"white"}}>Engineering Courses</Link>
+            <Link to="/arts" style={{textDecoration:"none",color:"white"}}>Arts Courses</Link>
+          </div>
+        </li>
+        {/* <li className='a'style={{color:"white",opacity:"0"}}>About</li> */}
+        {/* <li className='a'style={{color:"white",opacity:"0"}}>About</li> */}
+      <li id='a' style={{marginLeft:"1.7cm"}}><Link to="/about"style={{textDecoration:"none",color:"white"}}>About</Link></li>
+        <li id='a'style={{marginLeft:"1.1cm"}}><Link to="/contact" style={{textDecoration:"none",color:"white"}}>Contact</Link></li>
+        <li id='a'style={{marginLeft:"5cm"}}><Link to="/login"style={{textDecoration:"none",color:"white"}}>Login</Link></li>
+        <li id='a'style={{marginLeft:"15cm"}}><Link to="/admin"style={{textDecoration:"none",color:"white"}}>Admin</Link></li>
+      </ul>
+    </nav>
+</div>
+  );
+};
+
+export default Navbar;

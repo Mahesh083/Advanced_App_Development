@@ -1,32 +1,38 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-
-export default function Navbar() {
+import React from 'react'
+import "./Home.css"
+import { Link } from 'react-router-dom'
+const Home = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
+  <>
+  <h1>Hi</h1>
+    <div className='dashboard-row'>
+    <div className='left-section'>
+    <h3>Jobs</h3>
+    </div>
+    
+    <input className="search-jobs"type="text" placeholder='Search Jobs'></input>
+    <input className="search-location"type="text" placeholder='Search Locations'></input>
+    <div className='last'>
+    <img className="img-dashboard" src={dashboard}></img>
+    </div>
+    </div>
+    <div className="dashboard-column">
+    <div className="middle-section">
+    </div>
+    <div className='bottom-section'>
+    <p1>Profile</p1><br></br>
+    <p1>Enroll</p1><br></br>
+    <p1>Trending</p1><br></br>
+    <p1>Hackathon</p1><br></br>
+    <p1>Resume</p1><br></br>
+    <p1>Logout</p1><br></br>
+    </div>
+
+
+    </div>
+    </>
+   
+  )
 }
+
+export default Home
